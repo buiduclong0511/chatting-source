@@ -91,7 +91,7 @@ export const AppScreen = () => {
 
     // effect
     useEffect(() => {
-        socket.current = io("https://chatting-socket.herokuapp.com");
+        socket.current = io("https://localhost:3002");
         fetchConversations();
         registerSocket();
         receiveMessageFromServer();
